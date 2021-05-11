@@ -21,8 +21,7 @@ const ProfileScreen = () => {
               borderRadius: 10,
             }}
             source={{
-              uri:
-                "https://images.unsplash.com/photo-1566843457184-655eedf6f1ef?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+              uri: "https://avatars.githubusercontent.com/u/49751060?v=4",
             }}
           />
           <Text

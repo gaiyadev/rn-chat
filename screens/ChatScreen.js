@@ -3,6 +3,8 @@ import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { COLORS } from "../constants/colors";
 import { FONTS } from "../constants/fonts";
 import { Button } from "react-native-elements";
+import Icon from "react-native-vector-icons/Ionicons";
+import { Input } from "react-native-elements";
 
 const ChatScreen = () => {
   return (
@@ -50,7 +52,7 @@ const ChatScreen = () => {
             alignItems: "flex-start",
             backgroundColor: COLORS.white,
             margin: 23,
-            height: 100,
+            // height: 100,
             borderBottomRightRadius: 23,
             borderTopLeftRadius: 23,
             borderTopRightRadius: 23,
@@ -58,12 +60,10 @@ const ChatScreen = () => {
             padding: 13,
           }}
         >
-          <Text style={{ ...FONTS.body2, color: COLORS.black }}>
+          <Text style={{ fontSize: 12, color: COLORS.black }}>
             Hello, nice to meet you
           </Text>
-          <Text style={{ ...FONTS.body2, color: COLORS.black }}>
-            How are you
-          </Text>
+          <Text style={{ fontSize: 12, color: COLORS.black }}>How are you</Text>
         </View>
         {/* retp */}
         <View
@@ -71,7 +71,7 @@ const ChatScreen = () => {
             alignItems: "flex-start",
             backgroundColor: COLORS.white,
             margin: 23,
-            height: 100,
+            // height: 100,
             borderBottomRightRadius: 23,
             borderTopLeftRadius: 23,
             borderBottomRightRadius: 1,
@@ -79,12 +79,31 @@ const ChatScreen = () => {
             padding: 13,
           }}
         >
-          <Text style={{ ...FONTS.body2, color: COLORS.black }}>
+          <Text style={{ fontSize: 12, color: COLORS.black }}>
             Hello, nice to meet you
           </Text>
-          <Text style={{ ...FONTS.body2, color: COLORS.black }}>
-            How are you
-          </Text>
+          <Text style={{ fontSize: 12, color: COLORS.black }}>How are you</Text>
+        </View>
+        {/*  */}
+        <View>
+          <Input
+            style={{
+              borderBottomColor: COLORS.white,
+            }}
+            placeholder="Type here your message"
+            placeholderTextColor={COLORS.white}
+            leftIcon={
+              <Icon
+                name="chatbubble-ellipses-outline"
+                size={24}
+                color={COLORS.white}
+              />
+            }
+            rightIcon={
+              <Icon name="mic-outline" size={24} color={COLORS.white} />
+            }
+            onChangeText={() => {}}
+          />
         </View>
       </View>
     </ScrollView>
