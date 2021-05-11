@@ -71,7 +71,6 @@ const ChatScreen = () => {
             alignItems: "flex-start",
             backgroundColor: COLORS.white,
             margin: 23,
-            // height: 100,
             borderBottomRightRadius: 23,
             borderTopLeftRadius: 23,
             borderBottomRightRadius: 1,

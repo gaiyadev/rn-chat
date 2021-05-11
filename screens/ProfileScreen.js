@@ -31,7 +31,7 @@ const ProfileScreen = () => {
               paddingVertical: 15,
             }}
           >
-            Danny, 38 M.W
+            Ghost Developer
           </Text>
         </View>
         {/* ICONS */}

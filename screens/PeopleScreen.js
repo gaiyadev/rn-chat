@@ -8,17 +8,41 @@ import { Avatar, ListItem } from "react-native-elements";
 const PeopleScreen = () => {
   const renderItemUser = (itemData) => {
     return (
-      <Avatar
-        containerStyle={{
-          marginVertical: 20,
-          marginHorizontal: 7,
+      <View
+        style={{
+          alignItems: "center",
         }}
-        size="large"
-        rounded
-        source={{
-          uri: itemData.item.avatar,
-        }}
-      />
+      >
+        <Avatar
+          containerStyle={{
+            marginVertical: 10,
+            marginHorizontal: 7,
+          }}
+          size="large"
+          rounded
+          source={{
+            uri: itemData.item.avatar,
+          }}
+        />
+        <View
+          style={{
+            borderWidth: 5,
+            borderColor: itemData.item.active ? COLORS.online : COLORS.bgColor,
+            borderRadius: 12,
+            marginLeft: 31,
+            marginTop: -19,
+            marginBottom: 13,
+          }}
+        ></View>
+        <Text
+          style={{
+            ...FONTS.h3,
+            color: COLORS.white,
+          }}
+        >
+          {itemData.item.name}
+        </Text>
+      </View>
     );
   };
   const renderItem = (itemData) => {
@@ -69,7 +93,7 @@ const PeopleScreen = () => {
               fontWeight: "bold",
             }}
           >
-            Requests
+            Friends
           </Text>
         </View>
         {/* List */}
